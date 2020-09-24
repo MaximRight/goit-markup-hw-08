@@ -1,0 +1,46 @@
+/* HERO css */
+
+.hero {
+	padding-top: 200px;
+
+	// @include no-flex-center();
+
+	text-align: center;
+
+	width: 480px;
+	// max-width: 1600px;
+	height: 600px;
+
+	// тут можно обойтись одним значением градиента
+
+	background-image: linear-gradient(
+			to right,
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: $footer-color;
+}
+
+.hero__container {
+	width: 480px;
+	// width: 696px;
+	display: inline-block;
+}
+
+.hero__title {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	/* outline: 1px solid tomato; */
+
+	color: $white-color;
+
+	@include hero-font;
+}
+
+.hero__button {
+	cursor: pointer;
+	@extend %button;
+}

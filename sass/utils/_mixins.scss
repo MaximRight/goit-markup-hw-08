@@ -1,0 +1,213 @@
+@mixin body {
+	background-color: $white-color;
+	color: $primary-text-color;
+
+	font-family: roboto, sans-serif;
+	letter-spacing: 0.03em;
+}
+
+@mixin checkbox-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+@mixin checked {
+	border-radius: 2px;
+	border-color: transparent;
+	background-color: $accent-color;
+	background-image: url(../images/icon-check.svg);
+	background-origin: border-box;
+}
+
+@mixin checked-hover {
+	background-image: url(../images/icon-check.svg),
+		linear-gradient(to right, rgba(47, 48, 58, 0.2), rgba(47, 48, 58, 0.2));
+}
+
+@mixin checked-active {
+	background-image: url(../images/icon-check.svg),
+		linear-gradient(
+			to right,
+			rgba(233, 234, 236, 0.2),
+			rgba(233, 234, 236, 0.2)
+		);
+}
+
+@mixin underline {
+	border-bottom: 1px solid currentColor;
+	line-height: 0.9;
+	color: $accent-color;
+}
+
+@mixin flexbox($display: flex) {
+	display: $display;
+}
+
+@mixin flex-center(
+	$display: flex,
+	$content: center,
+	$items: center,
+	$wrap: wrap
+) {
+	display: $display;
+	justify-content: $content;
+	align-items: $items;
+	flex-wrap: $wrap;
+}
+
+@mixin visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+@mixin no-flex-center($ml: auto, $mr: auto) {
+	margin-left: $ml;
+	margin-right: $mr;
+}
+
+@mixin mrgn-btm($margin: 30px) {
+	margin-bottom: $margin;
+}
+
+@mixin container($ml: auto, $mr: auto, $pl: 15px, $pr: 15px, $width: 1200px) {
+	margin-left: $ml;
+	margin-right: $mr;
+	padding-left: $pl;
+	padding-right: $pr;
+	width: $width;
+}
+
+// FONTS
+
+@mixin form-label-font {
+	font-size: 12px;
+	line-height: 1.16;
+
+	letter-spacing: 0.01em;
+}
+
+@mixin form-input-font {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.01em;
+}
+
+@mixin header-font() {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+}
+
+@mixin subtitle-font($color: $title-text-color, $transform: uppercase) {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	color: $color;
+	text-transform: $transform;
+}
+
+@mixin footer-feature-checkbox-font($color: $primary-text-color) {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	color: $color;
+}
+
+@mixin team-card-font($weight: 500, $height: 1.19, $color: $title-text-color) {
+	font-weight: $weight;
+	font-size: 16px;
+	line-height: $height;
+
+	color: $color;
+}
+
+@mixin filter-font {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+}
+
+@mixin btn-font($size: 16px, $height: 1.87) {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 700;
+	font-size: $size;
+	line-height: $height;
+
+	letter-spacing: 0.06em;
+}
+
+@mixin thumb-text-font {
+	font-weight: 400px;
+	font-size: 18px;
+	line-height: 1.56;
+}
+
+@mixin form-title-font {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	color: $title-text-color;
+}
+
+@mixin title-font() {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	color: $title-text-color;
+}
+
+@mixin hero-font {
+	font-size: 26px;
+	@if{
+		@media screen and (min-width: 1600px) {
+			font-weight: 900;
+			font-size: 44px;
+			line-height: 1.36;
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+		}
+	}
+}
+
+@mixin breakpoint($point) {
+	@if $point == desktop {
+		@media (min-width: 1600px) {
+			@content;
+		}
+	} @else if $point == tablet {
+		@media (min-width: 768px) {
+			@content;
+		}
+	} @else if $point == mobile {
+		@media (min-width: 480px) {
+			@content;
+		}
+	} @else if $point == mobileonly {
+		@media (max-width: 479px) {
+			@content;
+		}
+	} @else {
+		@error 'Не указано значение для `#{$breakpoint}`';
+	}
+}

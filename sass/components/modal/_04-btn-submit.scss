@@ -1,0 +1,15 @@
+/* BUTTON SUBMIT */
+
+.modal__button-submit {
+	&:disabled {
+		background-color: gray;
+
+		&:hover {
+			background-color: gray;
+		}
+	}
+}
+
+.modal__button-submit {
+	@extend %button;
+}

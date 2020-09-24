@@ -1,0 +1,89 @@
+/* TEAM PHOTOS AND LINKS!!!*/
+
+.team.section {
+	background-color: $button-bcg;
+}
+
+// .team__container {
+// 	@extend %container;
+// }
+
+// .team-members {
+// 	@extend %flex-center;
+// }
+
+.team-members__item {
+	width: calc((100% - 3 * 30px) / 4);
+
+	padding-bottom: 30px;
+
+	text-align: center;
+
+	background-color: $white-color;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	border-radius: 0px 0px 4px 4px;
+
+	/* outline: 1px solid tomato; */
+
+	&:not(:nth-child(4n)) {
+		margin-right: $mr;
+	}
+	&:not(:nth-last-child(-n + 4)) {
+		margin-bottom: $mb;
+	}
+}
+
+.team-members__image {
+	margin-bottom: $mb;
+}
+
+.team-members__title {
+	margin-top: 0px;
+	margin-bottom: 10px;
+
+	@extend %team-card-font;
+	/* outline: 1px solid tomato; */
+}
+
+.team-members__text {
+	margin-top: 0px;
+	margin-bottom: 16px;
+
+	@include team-card-font($weight: 400, $color: $primary-text-color);
+	/* outline: 1px solid tomato; */
+}
+
+.teamcard-links__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.teamcard-links {
+	display: inline-flex;
+	// @include flex-center;
+
+	/* outline: 1px solid black; */
+}
+
+.teamcard-links .link {
+	@extend %flex-center;
+
+	width: 44px;
+	height: 44px;
+
+	color: $icon-color;
+	border-radius: 50%;
+
+	transition: color $transition-time $transition-function,
+		background-color $transition-time $transition-function;
+
+	/* background-color: yellow; */
+
+	&:hover {
+		color: $white-color;
+		background-color: $accent-color;
+
+		/* если убрать fill: currentcolor из иконки, тогда заливаем в ссылке сразу и при ховере */
+		/* fill: tomato; */
+	}
+}

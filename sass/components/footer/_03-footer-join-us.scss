@@ -1,0 +1,44 @@
+/* FOOTER JOIN US */
+
+.container-footer.join-us {
+	margin-right: 93px;
+}
+
+.list-footer {
+	// @include flex-center();
+}
+
+.list-footer .item {
+	display: flex;
+
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+
+.list-footer .link {
+	height: 44px;
+	width: 44px;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: 51% 50%;
+	/* background-color: tomato; */
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	transition: background-color $transition-time $transition-function;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+	}
+}
+
+$numbers: "1" "footerlink1", "2" "footerlink2", "3" "footerlink3",
+	"4" "footerlink4";
+
+@each $iconNumber, $iconName in $numbers {
+	.list-footer .item:nth-child(#{$iconNumber}) .link {
+		background-image: url(../images/#{$iconName}.svg);
+	}
+}

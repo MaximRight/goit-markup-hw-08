@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=fallback"
+			rel="stylesheet"
+		/>
+
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" /> -->
+
+		<link rel="stylesheet" href="./css/test.css" />
+	</head>
+	<body>
+		<ul class="features-set">
+			<li class="features-item"></li>
+			<li class="features-item"></li>
+			<li class="features-item"></li>
+			<li class="features-item"></li>
+			<li class="features-item"></li>
+			<li class="features-item"></li>
+		</ul>
+	</body>
+
+	<script>
+		const inputs = document.querySelectorAll("input[type=checkbox]")
+		const button = document.querySelector(".button-submit")
+
+		function check() {
+			button.disabled = true
+			inputs.forEach(input => {
+				if (input.checked) button.disabled = false
+			})
+		}
+
+		inputs.forEach(input => input.addEventListener("change", check))
+	</script>
+</html>

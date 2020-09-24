@@ -1,0 +1,45 @@
+/* BUTTON CLOSE */
+
+.button-close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	@extend %flex-center;
+
+	padding: 0;
+	width: 31px;
+	height: 31px;
+
+	/* background-color: yellow; */
+	background-color: $white-color;
+
+	outline: 0px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+
+	transition: fill $transition-time $transition-function,
+		transform $transition-time $transition-function;
+
+	&:hover {
+		transform: scale(1.2) rotate(180deg);
+	}
+
+	&:active {
+		fill: $accent-color;
+		stroke: $accent-color;
+		transform: scale(1.4) rotate(180deg);
+	}
+}
+
+.icon-close {
+	fill: $title-text-color;
+	width: 11px;
+	height: 11px;
+
+	transition: transform 500ms;
+
+	.button-close:hover & {
+		fill: $accent-color;
+	}
+}

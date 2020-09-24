@@ -1,0 +1,29 @@
+// FOOTER ADDRESS
+
+.container-footer.address {
+	width: 231px;
+	margin-left: 0px;
+	margin-right: 70px;
+}
+
+.address .location {
+	@include footer-feature-checkbox-font($color: $white-color);
+}
+
+.address .location,
+.address .link-footer:nth-child(1) {
+	margin-top: 0px;
+	margin-bottom: 9px;
+}
+
+.address .title {
+	@include footer-feature-checkbox-font($footer-links-color);
+	text-decoration: none;
+
+	transition: color $transition-time $transition-function;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}

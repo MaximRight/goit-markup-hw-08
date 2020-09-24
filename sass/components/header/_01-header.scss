@@ -1,0 +1,25 @@
+// * PAGE HEADER */
+.page-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+
+	overflow: auto;
+
+	background-color: $white-color;
+	height: 60px;
+	border-bottom: 1px solid $header-stroke;
+
+	@include breakpoint(tablet) {
+		height: 80px;
+	}
+}
+
+.container.nav {
+	@include breakpoint(tablet) {
+		@include flex-center;
+		// outline: 2px solid tomato;
+	}
+}

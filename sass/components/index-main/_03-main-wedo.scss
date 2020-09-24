@@ -1,0 +1,46 @@
+/* WHAT WE DO СЕКЦИЯ ЧЕМ ЗАНИМАЕМСЯ!! and Team Headers*/
+
+.expertise.section {
+	@extend %no-top-padding;
+}
+
+// .images-wedo {
+// 	@extend %flex-center;
+// }
+
+.images-wedo__item {
+	width: calc((100% - 2 * 30px) / 3);
+
+	&:not(:nth-child(3n)) {
+		margin-right: $mr;
+	}
+
+	&:not(:nth-last-child(-n + 3)) {
+		margin-bottom: $mb;
+	}
+}
+
+.images-wedo__thumb {
+	position: relative;
+	@extend %flex-center;
+
+	&::before {
+		position: absolute;
+		content: "";
+
+		bottom: 0%;
+
+		width: 370px;
+		height: 70px;
+
+		background-color: $wedo-back-color;
+	}
+}
+
+.images-wedo__subtitle {
+	position: absolute;
+
+	bottom: 27px;
+
+	@include subtitle-font($color: $white-color);
+}

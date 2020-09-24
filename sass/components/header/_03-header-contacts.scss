@@ -1,0 +1,31 @@
+/* CONTACTS !!!!!!!!!*/
+
+.contacts-nav {
+	display: none;
+	@include breakpoint(tablet) {
+		display: flex;
+	}
+}
+
+.contacts-nav__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.contacts-nav__link {
+	// @extend %flex-center;
+
+	color: $primary-text-color;
+
+	@extend %header-font;
+
+	transition: color $transition-time $transition-function;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.contacts-nav__icon {
+	margin-right: 10px;
+}

@@ -1,0 +1,58 @@
+/* FEATURES НАШИ ПРЕИМУЩЕСТВА */
+
+// .feature.container {
+// 	height: 251px;
+// 	outline: 2px solid tomato;
+// }
+
+// .feature-list {
+// 	@include flex-center();
+// }
+
+.feature-list__item {
+	width: calc((100% - 3 * 30px) / 4);
+
+	&::before {
+		display: block;
+		content: "";
+		height: 120px;
+
+		margin-bottom: $mr;
+
+		background-color: $button-bcg;
+
+		background-size: 70px;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		border-radius: 4px;
+	}
+
+	&:not(:nth-child(4n)) {
+		margin-right: $mr;
+	}
+
+	&:not(:nth-last-child(-n + 4)) {
+		margin-bottom: $mb;
+	}
+}
+
+$items: "1" "feature1", "2" "feature2", "3" "feature3", "4" "feature4";
+
+@each $childNumber, $iconName in $items {
+	.feature-list__item:nth-child(#{$childNumber})::before {
+		background-image: url(../images/#{$iconName}.svg);
+	}
+}
+
+.feature-subtitle {
+	@extend %subtitle-font;
+}
+
+.feature-list__subtitle {
+	margin-bottom: 10px;
+}
+
+.feature-list__text {
+	@extend %footer-feature-checkbox-font;
+}

@@ -1,0 +1,261 @@
+// /* прячет из разметки, но оставляет для читалок */
+%visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+%is-none {
+	display: none;
+}
+
+%no-top-padding {
+	padding-top: 0px;
+}
+
+%flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+%no-flex-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+%mgn-bottom-30 {
+	margin-bottom: 30px;
+}
+
+// Кроссбраузерный хак
+%checkbox-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+%checked {
+	border-radius: 2px;
+	border-color: transparent;
+	background-color: $accent-color;
+	background-image: url(../images/icon-check.svg);
+	background-origin: border-box;
+}
+
+%checked-hover {
+	background-image: url(../images/icon-check.svg),
+		linear-gradient(to right, rgba(47, 48, 58, 0.2), rgba(47, 48, 58, 0.2));
+}
+
+%checked-active {
+	background-image: url(../images/icon-check.svg),
+		linear-gradient(
+			to right,
+			rgba(233, 234, 236, 0.2),
+			rgba(233, 234, 236, 0.2)
+		);
+}
+
+%underline {
+	border-bottom: 1px solid currentColor;
+	line-height: 0.9;
+	color: $accent-color;
+}
+
+// BUTTON
+
+%button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 200px;
+	height: 50px;
+
+	color: $white-color;
+	background-color: $accent-color;
+
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	outline: transparent;
+
+	box-shadow: $footer-box-shadow;
+
+	@include btn-font;
+
+	transition: background-color $transition-time $transition-function;
+
+	&:hover,
+	&:focus {
+		background-color: $btn-hover-color;
+	}
+
+	&:active {
+		background-color: $btn-active-color;
+	}
+}
+
+%filter {
+	padding: 6px 22px;
+	border-radius: 4px;
+	border: 0px solid transparent;
+
+	min-width: 73px;
+	height: 38px;
+
+	background-color: $button-bcg;
+	color: $title-text-color;
+
+	cursor: pointer;
+
+	transition: color $transition-time $transition-function,
+		background-color $transition-time $transition-function;
+
+	&:hover,
+	&:focus {
+		/* border: 0px; */
+		color: $white-color;
+		background-color: $accent-color;
+
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+			0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
+}
+
+%container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 1200px;
+}
+
+%body {
+	background-color: $white-color;
+	color: $primary-text-color;
+
+	font-family: roboto, sans-serif;
+	letter-spacing: 0.03em;
+}
+
+// Заголовки в секциях
+%section-title {
+	margin-top: 0px;
+	margin-bottom: 50px;
+
+	@include title-font();
+}
+
+%footer-title {
+	display: block;
+
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: $white-color;
+	text-transform: uppercase;
+
+	@include subtitle-font($color: $white-color);
+}
+
+// FONTS
+
+%form-label-font {
+	font-size: 12px;
+	line-height: 1.16;
+
+	letter-spacing: 0.01em;
+}
+
+%form-input-font {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.01em;
+}
+
+%header-font {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+}
+
+%subtitle-font {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	color: $title-text-color;
+	text-transform: uppercase;
+}
+
+%footer-feature-checkbox-font {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	color: $primary-text-color;
+}
+
+%team-card-font {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+
+	color: $title-text-color;
+}
+
+%filter-font {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+}
+
+%btn-font {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+
+	letter-spacing: 0.06em;
+}
+
+%thumb-text-font {
+	font-weight: 400px;
+	font-size: 18px;
+	line-height: 1.56;
+}
+
+%form-title-font {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	color: $title-text-color;
+}
+
+%title-font {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	color: $title-text-color;
+}

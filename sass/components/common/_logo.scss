@@ -1,0 +1,30 @@
+/* LOGO */
+
+.logo {
+	display: block;
+
+	font-family: "Raleway", sans-serif;
+	color: $accent-color;
+
+	font-size: 26px;
+	line-height: 1.19;
+	text-decoration: none;
+	/* outline: 1px solid tomato; */
+
+	.navbar & {
+		margin-right: 93px;
+	}
+
+	.footbar & {
+		margin-bottom: 20px;
+	}
+
+	&-header {
+		color: $title-text-color;
+		font-size: 26px;
+	}
+
+	&-footer {
+		color: $white-color;
+	}
+}
