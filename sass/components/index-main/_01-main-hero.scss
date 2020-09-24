@@ -7,9 +7,9 @@
 
 	text-align: center;
 
-	width: 480px;
+	// width: 480px;
 	// max-width: 1600px;
-	height: 600px;
+	// height: 600px;
 
 	// тут можно обойтись одним значением градиента
 
@@ -18,14 +18,14 @@
 			rgba(47, 48, 58, 0.4),
 			rgba(47, 48, 58, 0.4)
 		),
-		url(../images/background.jpg);
+		url(../images/header.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: $footer-color;
 }
 
 .hero__container {
-	width: 480px;
+	// width: 480px;
 	// width: 696px;
 	display: inline-block;
 }
