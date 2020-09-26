@@ -1,17 +1,25 @@
 /* OUR CLIENTS*/
 
 .clients-list {
-	@include flex-center($content: space-between);
+	@include flex-center($content: space-around);
 }
 
-.clients-list__item:nth-child(2) .icon {
-	filter: drop-shadow(1px 3px 1px rgba(0, 0, 0, 0.2));
+.clients-list__item {
+	// margin-bottom: $mb;
+
+	&:not(:nth-last-child(-n + 2)) {
+		margin-bottom: $mb;
+	}
 }
+
+// .clients-list__item:nth-child(2) .icon {
+// 	filter: drop-shadow(1px 3px 1px rgba(0, 0, 0, 0.2));
+// }
 
 .clients-list__link {
 	@extend %flex-center;
 
-	width: 170px;
+	width: 210px;
 	height: 90px;
 
 	color: $icon-color;
@@ -26,6 +34,8 @@
 		color: $accent-color;
 		border: 1px solid $accent-color;
 	}
+
+	// width: 170px;
 }
 
 .clients-list__icon {

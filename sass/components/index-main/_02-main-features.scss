@@ -10,7 +10,7 @@
 // }
 
 .feature-list__item {
-	width: calc((100% - 3 * 30px) / 4);
+	// width: calc((100% - 3 * 30px) / 4);
 
 	&::before {
 		display: block;
@@ -28,13 +28,13 @@
 		border-radius: 4px;
 	}
 
-	&:not(:nth-child(4n)) {
-		margin-right: $mr;
-	}
+	// &:not(:nth-child(4n)) {
+	// 	margin-right: $mr;
+	// }
 
-	&:not(:nth-last-child(-n + 4)) {
-		margin-bottom: $mb;
-	}
+	// &:not(:nth-last-child(-n + 4)) {
+	// 	margin-bottom: $mb;
+	// }
 }
 
 $items: "1" "feature1", "2" "feature2", "3" "feature3", "4" "feature4";

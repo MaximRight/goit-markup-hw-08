@@ -497,10 +497,6 @@ h5 {
 }
 
 /* FEATURES НАШИ ПРЕИМУЩЕСТВА */
-.feature-list__item {
-  width: calc((100% - 3 * 30px) / 4);
-}
-
 .feature-list__item::before {
   display: block;
   content: "";
@@ -511,14 +507,6 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
-}
-
-.feature-list__item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
-
-.feature-list__item:not(:nth-last-child(-n + 4)) {
-  margin-bottom: 30px;
 }
 
 .feature-list__item:nth-child(1)::before {
@@ -542,6 +530,10 @@ h5 {
 }
 
 /* WHAT WE DO СЕКЦИЯ ЧЕМ ЗАНИМАЕМСЯ!! and Team Headers*/
+.expertise.section {
+  display: none;
+}
+
 .images-wedo__item {
   width: calc((100% - 2 * 30px) / 3);
 }
@@ -579,30 +571,35 @@ h5 {
 }
 
 /* TEAM PHOTOS AND LINKS!!!*/
+.team.container {
+  text-align: center;
+}
+
+.team-members {
+  display: inline-block;
+}
+
 .team.section {
   background-color: #f5f4fa;
 }
 
 .team-members__item {
-  width: calc((100% - 3 * 30px) / 4);
+  width: 450px;
   padding-bottom: 30px;
   text-align: center;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   /* outline: 1px solid tomato; */
 }
 
-.team-members__item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
-
-.team-members__item:not(:nth-last-child(-n + 4)) {
+.team-members__item:not(:nth-last-child(1)) {
   margin-bottom: 30px;
 }
 
 .team-members__image {
+  display: inline;
   margin-bottom: 30px;
 }
 
@@ -655,9 +652,8 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -665,13 +661,12 @@ h5 {
       flex-wrap: wrap;
 }
 
-.clients-list__item:nth-child(2) .icon {
-  -webkit-filter: drop-shadow(1px 3px 1px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(1px 3px 1px rgba(0, 0, 0, 0.2));
+.clients-list__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 30px;
 }
 
 .clients-list__link {
-  width: 170px;
+  width: 210px;
   height: 90px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
@@ -792,7 +787,6 @@ h5 {
 }
 
 .form-subscribe .email {
-  width: 358px;
   padding: 15px 16px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -847,7 +841,7 @@ h5 {
   position: absolute;
   left: 50%;
   padding-top: 40px;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: white;
   opacity: 1;
