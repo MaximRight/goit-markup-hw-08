@@ -2,7 +2,18 @@
 
 .modal-form {
 	@extend %no-flex-center;
-	width: 370px;
+
+	@include breakpoint(mobile-only) {
+		width: calc(100% - 80px);
+	}
+
+	@include breakpoint(mobile) {
+		width: 370px;
+	}
+
+	@include breakpoint(desktop) {
+		width: 448px;
+	}
 
 	/* outline: 1px solid tomato; */
 

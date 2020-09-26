@@ -6,7 +6,7 @@
 
 .feature-list {
 	@include breakpoint(tablet) {
-		@include flex-center();
+		@include flex-center($items: stretch);
 	}
 }
 
@@ -33,7 +33,7 @@
 		}
 	}
 
-	@include breakpoint(tablet) {
+	@include breakpoint(tablet-to-desktop) {
 		width: calc((100% - 1 * 30px) / 2);
 
 		&:not(:nth-child(2n)) {

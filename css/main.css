@@ -109,7 +109,7 @@
   color: #757575;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .feature-list__text, .checkbox-label {
     font-size: 14px;
     line-height: 1.71;
@@ -664,9 +664,9 @@ h5 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -690,7 +690,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .feature-list__item {
     width: calc((100% - 1 * 30px) / 2);
   }
@@ -1275,22 +1275,56 @@ h5 {
   position: absolute;
   left: 50%;
   padding-top: 40px;
-  width: 450px;
-  min-height: 581px;
+  padding-bottom: 40px;
   background-color: white;
   opacity: 1;
-  -webkit-transform: translate(-50%, 20%) scale(1);
-          transform: translate(-50%, 20%) scale(1);
+  -webkit-transform: translate(-50%, 0%) scale(1);
+          transform: translate(-50%, 0%) scale(1);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
+@media (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
+  }
+}
+
+@media (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
 /*       -------АНКЕТА В МОДАЛКЕ!!!!------------ */
 .modal-form {
-  width: 370px;
   /* outline: 1px solid tomato; */
+}
+
+@media (max-width: 479px) {
+  .modal-form {
+    width: calc(100% - 80px);
+  }
+}
+
+@media (min-width: 480px) {
+  .modal-form {
+    width: 370px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-form {
+    width: 448px;
+  }
 }
 
 .modal-form__title {
@@ -1416,7 +1450,7 @@ h5 {
 }
 
 .icon-check {
-  margin-right: 7px;
+  margin-right: 4px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;

@@ -38,16 +38,28 @@
 	position: absolute;
 	left: 50%;
 
-	padding-top: 40px;
+	@include breakpoint(mobile-only) {
+		width: calc(100% - 30px);
+	}
 
-	width: 450px;
-	min-height: 581px;
+	@include breakpoint(mobile) {
+		width: 450px;
+	}
+
+	@include breakpoint(desktop) {
+		width: 528px;
+	}
+
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	// min-height: 581px;
 
 	background-color: white;
 
 	opacity: 1;
 
-	transform: translate(-50%, 20%) scale(1);
+	transform: translate(-50%, 0%) scale(1);
 
 	transition: transform $transition-time $transition-function $transition-time,
 		opacity $transition-time $transition-function $transition-time;

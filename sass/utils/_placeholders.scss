@@ -216,7 +216,7 @@
 	line-height: 1.16;
 	color: $primary-text-color;
 
-	@include breakpoint(tablet) {
+	@include breakpoint(desktop) {
 		font-size: 14px;
 		line-height: 1.71;
 	}
