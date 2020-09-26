@@ -201,7 +201,7 @@ h5 {
   color: #212121;
 }
 
-Контейнер для центровки контента .container {
+.container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -510,19 +510,19 @@ h5 {
 }
 
 .feature-list__item:nth-child(1)::before {
-  background-image: url(../images/feature1.svg);
+  background-image: url(/images/feature1.svg);
 }
 
 .feature-list__item:nth-child(2)::before {
-  background-image: url(../images/feature2.svg);
+  background-image: url(/images/feature2.svg);
 }
 
 .feature-list__item:nth-child(3)::before {
-  background-image: url(../images/feature3.svg);
+  background-image: url(/images/feature3.svg);
 }
 
 .feature-list__item:nth-child(4)::before {
-  background-image: url(../images/feature4.svg);
+  background-image: url(/images/feature4.svg);
 }
 
 .feature-list__subtitle {
@@ -571,14 +571,6 @@ h5 {
 }
 
 /* TEAM PHOTOS AND LINKS!!!*/
-.team.container {
-  text-align: center;
-}
-
-.team-members {
-  display: inline-block;
-}
-
 .team.section {
   background-color: #f5f4fa;
 }
@@ -691,15 +683,10 @@ h5 {
 }
 
 .footer {
+  text-align: center;
   padding-top: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   /* outline: 2px solid tomato; */
-}
-
-.container-footer.address {
-  width: 231px;
-  margin-left: 0px;
-  margin-right: 70px;
 }
 
 .address .location {
@@ -730,8 +717,18 @@ h5 {
 }
 
 /* FOOTER JOIN US */
-.container-footer.join-us {
-  margin-right: 93px;
+.list-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .list-footer .item {
@@ -779,7 +776,7 @@ h5 {
 
 /* FOOTER SUBSCRIBE!!! */
 .container-subscribe {
-  height: 80px;
+  margin-bottom: 20px;
 }
 
 .form-subscribe {

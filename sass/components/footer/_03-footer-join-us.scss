@@ -1,11 +1,12 @@
 /* FOOTER JOIN US */
 
-.container-footer.join-us {
-	margin-right: 93px;
-}
+// Для Десктопа
+// .container-footer.join-us {
+// 	margin-right: 93px;
+// }
 
 .list-footer {
-	// @include flex-center();
+	@include flex-center();
 }
 
 .list-footer .item {

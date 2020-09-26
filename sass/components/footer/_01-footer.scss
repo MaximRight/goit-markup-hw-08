@@ -7,10 +7,12 @@
 }
 
 .footer {
-	// @include flex-center($items: baseline);
-
+	text-align: center;
 	padding-top: 60px;
 
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	/* outline: 2px solid tomato; */
+
+	//  для десктопа
+	// @include flex-center($items: baseline);
 }
