@@ -118,7 +118,7 @@
 	}
 }
 
-@include breakpoint(desktop) {
+@include breakpoint(tablet) {
 	.nav-bar__button {
 		display: none;
 	}

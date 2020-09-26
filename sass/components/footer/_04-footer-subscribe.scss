@@ -3,6 +3,12 @@
 .container-subscribe {
 	margin-bottom: 20px;
 
+	@include no-flex-center;
+
+	@include breakpoint(tablet-to-desktop) {
+		max-width: 450px;
+	}
+
 	// для десктопа
 	// width: 570px;
 	// height: 80px;
@@ -16,12 +22,20 @@
 }
 
 .form-subscribe .email {
-	width: 100%;
+	@include breakpoint(mobile-only) {
+		width: 100%;
+	}
+
+	@include breakpoint(mobile) {
+		width: 450px;
+	}
+
 	padding: 15px 16px;
 
-	@include breakpoint(until-tablet) {
+	@include breakpoint(until-desktop) {
 		margin-bottom: 20px;
 	}
+
 	margin-right: 12px;
 
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -35,6 +49,9 @@
 	&:focus {
 		border: 1px solid $white-color;
 	}
+	// @include breakpoint(tablet) {
+	// 	max-width: 450px;
+	// }
 
 	@include breakpoint(desktop) {
 		width: 358px;

@@ -22,7 +22,9 @@
 	.team__container {
 		@include container;
 	}
+}
 
+@include breakpoint(tablet) {
 	.team-members {
 		@include flex-center;
 	}
@@ -41,6 +43,18 @@
 
 	border-radius: 0px 0px 4px 4px;
 
+	@include breakpoint(tablet-to-desktop) {
+		width: calc((100% - 1 * 30px) / 2);
+
+		&:not(:nth-child(2n)) {
+			margin-right: $mr;
+		}
+
+		&:not(:nth-last-child(-n + 2)) {
+			margin-bottom: $mb;
+		}
+	}
+
 	@include breakpoint(desktop) {
 		width: calc((100% - 3 * 30px) / 4);
 
@@ -54,7 +68,7 @@
 		}
 	}
 
-	@include breakpoint(mobile-only) {
+	@include breakpoint(until-tablet) {
 		&:not(:nth-last-child(1)) {
 			margin-bottom: $mb;
 		}

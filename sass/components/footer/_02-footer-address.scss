@@ -3,10 +3,13 @@
 .container-footer.address {
 	margin-bottom: 60px;
 
+	@include breakpoint(desktop) {
+		margin-right: 70px;
+	}
+
 	// Для Десктопа
 	// width: 231px;
 	// margin-left: 0px;
-	// margin-right: 70px;
 }
 
 .address .location {

@@ -24,15 +24,16 @@
 }
 
 .container.nav {
-	display: flex;
-	align-items: center;
-
 	@include breakpoint(until-tablet) {
+		display: flex;
+		align-items: center;
+
 		height: 60px;
 	}
 
 	@include breakpoint(tablet) {
 		@include flex-center;
+		height: 80px;
 		// outline: 2px solid tomato;
 	}
 }

@@ -15,7 +15,7 @@
 }
 
 .footer {
-	@include breakpoint(mobile-only) {
+	@include breakpoint(until-desktop) {
 		text-align: center;
 	}
 
@@ -26,5 +26,15 @@
 
 	@include breakpoint(desktop) {
 		@include flex-center($items: baseline, $content: space-between);
+	}
+}
+
+.tablet-footer-container {
+	@include breakpoint(tablet) {
+		@include flex-center($items: baseline, $content: space-around);
+	}
+
+	@include breakpoint(desktop) {
+		margin-right: 93px;
 	}
 }

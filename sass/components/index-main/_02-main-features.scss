@@ -1,12 +1,11 @@
 /* FEATURES НАШИ ПРЕИМУЩЕСТВА */
 
-@include breakpoint(desktop) {
-	.feature.container {
-		height: 251px;
-		outline: 2px solid tomato;
-	}
+// .feature.container {
+// 	outline: 2px solid tomato;
+// }
 
-	.feature-list {
+.feature-list {
+	@include breakpoint(tablet) {
 		@include flex-center();
 	}
 }
@@ -26,6 +25,24 @@
 		background-position: center;
 
 		border-radius: 4px;
+	}
+
+	@include breakpoint(until-tablet) {
+		&:not(:nth-last-child(1)) {
+			margin-bottom: $mb;
+		}
+	}
+
+	@include breakpoint(tablet) {
+		width: calc((100% - 1 * 30px) / 2);
+
+		&:not(:nth-child(2n)) {
+			margin-right: $mr;
+		}
+
+		&:not(:nth-last-child(-n + 2)) {
+			margin-bottom: $mb;
+		}
 	}
 
 	@include breakpoint(desktop) {

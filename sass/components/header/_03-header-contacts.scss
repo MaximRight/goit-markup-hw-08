@@ -1,8 +1,11 @@
 /* CONTACTS !!!!!!!!!*/
 
 .contacts-nav {
-	display: none;
-	@include breakpoint(tablet) {
+	@include breakpoint(until-tablet) {
+		display: none;
+	}
+
+	@include breakpoint(desktop) {
 		display: flex;
 	}
 }

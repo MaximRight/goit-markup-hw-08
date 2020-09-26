@@ -32,8 +32,12 @@
 	}
 }
 
-@include breakpoint(desktop) {
-	.hero__container {
+.hero__container {
+	@include breakpoint(mobile) {
+		width: 360px;
+		display: inline-block;
+	}
+	@include breakpoint(desktop) {
 		width: 696px;
 		display: inline-block;
 	}
