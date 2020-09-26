@@ -9,14 +9,19 @@
 }
 
 .form-subscribe {
-	// @include flex-center();
-	height: 50px;
+	@include breakpoint(desktop) {
+		@include flex-center();
+	}
+	// height: 50px;
 }
 
 .form-subscribe .email {
-	// width: 358px;
+	width: 100%;
 	padding: 15px 16px;
 
+	@include breakpoint(until-tablet) {
+		margin-bottom: 20px;
+	}
 	margin-right: 12px;
 
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -29,6 +34,10 @@
 	&:hover,
 	&:focus {
 		border: 1px solid $white-color;
+	}
+
+	@include breakpoint(desktop) {
+		width: 358px;
 	}
 }
 

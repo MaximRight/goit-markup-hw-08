@@ -12,8 +12,6 @@
 }
 
 .contacts-nav__link {
-	// @extend %flex-center;
-
 	color: $primary-text-color;
 
 	@extend %header-font;
@@ -23,6 +21,10 @@
 	&:hover,
 	&:focus {
 		color: $accent-color;
+	}
+
+	@include breakpoint(desktop) {
+		@include flex-center;
 	}
 }
 

@@ -1,12 +1,14 @@
 // * PAGE HEADER */
 .page-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1;
+	// position: fixed;
+	// top: 0;
+	// left: 0;
+	// width: 100%;
+	// z-index: 1;
 
-	overflow: auto;
+	// overflow: auto;
+
+	position: relative;
 
 	background-color: $white-color;
 	height: 60px;
@@ -15,9 +17,20 @@
 	@include breakpoint(tablet) {
 		height: 80px;
 	}
+
+	@include breakpoint(desktop) {
+		@include flex-center;
+	}
 }
 
 .container.nav {
+	display: flex;
+	align-items: center;
+
+	@include breakpoint(until-tablet) {
+		height: 60px;
+	}
+
 	@include breakpoint(tablet) {
 		@include flex-center;
 		// outline: 2px solid tomato;

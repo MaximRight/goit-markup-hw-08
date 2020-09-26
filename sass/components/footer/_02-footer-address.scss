@@ -1,11 +1,13 @@
 // FOOTER ADDRESS
 
-// Для Десктопа
-// .container-footer.address {
-// 	width: 231px;
-// 	margin-left: 0px;
-// 	margin-right: 70px;
-// }
+.container-footer.address {
+	margin-bottom: 60px;
+
+	// Для Десктопа
+	// width: 231px;
+	// margin-left: 0px;
+	// margin-right: 70px;
+}
 
 .address .location {
 	@include footer-feature-checkbox-font($color: $white-color);

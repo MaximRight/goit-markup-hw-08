@@ -1,15 +1,14 @@
 /* HERO css */
 
 .hero {
-	padding-top: 200px;
-
-	// @include no-flex-center();
+	// @include breakpoint(tablet-only) {
+	// 	width: 480px;
+	// 	margin-right: auto;
+	// 	margin-left: auto;
+	// }
 
 	text-align: center;
-
-	// width: 480px;
-	// max-width: 1600px;
-	// height: 600px;
+	padding: 118px 60px;
 
 	// тут можно обойтись одним значением градиента
 
@@ -22,12 +21,22 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: $footer-color;
+
+	@include breakpoint(desktop) {
+		@include no-flex-center();
+		padding-top: 200px;
+
+		// width: 480px;
+		// width: 1600px;
+		height: 600px;
+	}
 }
 
-.hero__container {
-	// width: 480px;
-	// width: 696px;
-	display: inline-block;
+@include breakpoint(desktop) {
+	.hero__container {
+		width: 696px;
+		display: inline-block;
+	}
 }
 
 .hero__title {

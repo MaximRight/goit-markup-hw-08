@@ -39,7 +39,7 @@ h5 {
 
 // Паддинг для плавающего меню, высчитывается по джаваскрипту + общие значения для всего боди
 .body {
-	padding-top: 80px;
+	// padding-top: 80px;
 
 	background-color: $white-color;
 	color: $primary-text-color;
@@ -54,14 +54,24 @@ h5 {
 
 // Паддинги для секции в этом макете
 .section {
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
+	padding-top: $section-mobile-padding;
+	padding-bottom: $section-mobile-padding;
+
+	@include breakpoint(desktop) {
+		padding-top: $section-desktop-padding;
+		padding-bottom: $section-desktop-padding;
+	}
 }
 
 // Заголовки в секциях
 .section-title {
+	text-align: center;
 	margin-top: 0px;
-	margin-bottom: 50px;
+	margin-bottom: $mb;
+
+	@include breakpoint(desktop) {
+		margin-bottom: 50px;
+	}
 
 	@include title-font();
 }
@@ -72,9 +82,16 @@ h5 {
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	width: 480px;
 
-	/* outline: 2px solid tomato; */
+	@include breakpoint(until-tablet) {
+		width: 100%;
+	}
+
+	@include breakpoint(desktop) {
+		width: 1200px;
+
+		/* outline: 2px solid tomato; */
+	}
 }
 
 // Заголовки к тексту-призыву в футере

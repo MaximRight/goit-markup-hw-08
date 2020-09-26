@@ -156,7 +156,11 @@
 // Заголовки в секциях
 %section-title {
 	margin-top: 0px;
-	margin-bottom: 50px;
+	margin-bottom: $mb;
+
+	@include breakpoint(desktop) {
+		margin-bottom: 50px;
+	}
 
 	@include title-font();
 }
@@ -208,10 +212,14 @@
 }
 
 %footer-feature-checkbox-font {
-	font-style: normal;
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.16;
 	color: $primary-text-color;
+
+	@include breakpoint(tablet) {
+		font-size: 14px;
+		line-height: 1.71;
+	}
 }
 
 %team-card-font {

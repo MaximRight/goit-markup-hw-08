@@ -11,8 +11,10 @@
 	text-decoration: none;
 	/* outline: 1px solid tomato; */
 
-	.navbar & {
-		margin-right: 93px;
+	@include breakpoint(tablet) {
+		.nav-bar & {
+			margin-right: 93px;
+		}
 	}
 
 	.footbar & {

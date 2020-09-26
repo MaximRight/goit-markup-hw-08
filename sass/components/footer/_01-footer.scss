@@ -1,18 +1,30 @@
 /* FOOTER */
 
 .footbar {
-	// @include no-flex-center();
+	// @include breakpoint(tablet-only) {
+	// 	width: 480px;
+	// 	margin-right: auto;
+	// 	margin-left: auto;
+	// }
+
+	@include breakpoint(desktop) {
+		@include no-flex-center();
+	}
 
 	background-color: $footer-color;
 }
 
 .footer {
-	text-align: center;
+	@include breakpoint(mobile-only) {
+		text-align: center;
+	}
+
 	padding-top: 60px;
 
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	/* outline: 2px solid tomato; */
 
-	//  для десктопа
-	// @include flex-center($items: baseline);
+	@include breakpoint(desktop) {
+		@include flex-center($items: baseline, $content: space-between);
+	}
 }

@@ -1,17 +1,17 @@
 /* FEATURES НАШИ ПРЕИМУЩЕСТВА */
 
-// .feature.container {
-// 	height: 251px;
-// 	outline: 2px solid tomato;
-// }
+@include breakpoint(desktop) {
+	.feature.container {
+		height: 251px;
+		outline: 2px solid tomato;
+	}
 
-// .feature-list {
-// 	@include flex-center();
-// }
+	.feature-list {
+		@include flex-center();
+	}
+}
 
 .feature-list__item {
-	// width: calc((100% - 3 * 30px) / 4);
-
 	&::before {
 		display: block;
 		content: "";
@@ -28,13 +28,17 @@
 		border-radius: 4px;
 	}
 
-	// &:not(:nth-child(4n)) {
-	// 	margin-right: $mr;
-	// }
+	@include breakpoint(desktop) {
+		width: calc((100% - 3 * 30px) / 4);
 
-	// &:not(:nth-last-child(-n + 4)) {
-	// 	margin-bottom: $mb;
-	// }
+		&:not(:nth-child(4n)) {
+			margin-right: $mr;
+		}
+
+		&:not(:nth-last-child(-n + 4)) {
+			margin-bottom: $mb;
+		}
+	}
 }
 
 $items: "1" "feature1", "2" "feature2", "3" "feature3", "4" "feature4";
@@ -51,6 +55,8 @@ $items: "1" "feature1", "2" "feature2", "3" "feature3", "4" "feature4";
 
 .feature-list__subtitle {
 	margin-bottom: 10px;
+
+	text-align: center;
 }
 
 .feature-list__text {

@@ -2,12 +2,18 @@
 
 .expertise.section {
 	display: none;
-	@extend %no-top-padding;
+
+	@include breakpoint(desktop) {
+		display: block;
+		padding-top: 0px;
+	}
 }
 
-// .images-wedo {
-// 	@extend %flex-center;
-// }
+@include breakpoint(desktop) {
+	.images-wedo {
+		@include flex-center;
+	}
+}
 
 .images-wedo__item {
 	width: calc((100% - 2 * 30px) / 3);
