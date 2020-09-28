@@ -50,6 +50,10 @@ h5 {
 	// @media screen and (min-width: 900px) {
 
 	// }
+
+	&.modal-open {
+		overflow: hidden;
+	}
 }
 
 // Паддинги для секции в этом макете
@@ -85,6 +89,10 @@ h5 {
 
 	@include breakpoint(until-tablet) {
 		width: 100%;
+	}
+
+	@include breakpoint(tablet-to-desktop) {
+		width: 768px;
 	}
 
 	@include breakpoint(desktop) {

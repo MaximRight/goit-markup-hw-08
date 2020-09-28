@@ -1,21 +1,24 @@
 /* SITE NAV!!!*/
 
-.nav-bar {
-	@include flex-center($content: space-between);
+// .nav-bar {
+// 	// @include flex-center($content: space-between);
 
-	@include breakpoint(until-tablet) {
-		width: 100%;
-	}
+// 	// @include breakpoint(until-tablet) {
+// 	// 	width: 100%;
+// 	// }
 
-	@include breakpoint(tablet) {
-		@include flex-center;
-		margin-right: auto;
-	}
-}
+// 	// @include breakpoint(tablet) {
+// 	// 	@include flex-center;
+// 	// 	// margin-right: auto;
+// 	// }
+// }
 
 .site-nav {
-	display: none;
+	// display: none;
 
+	@include breakpoint(until-tablet) {
+		margin-bottom: 60px;
+	}
 	@include breakpoint(tablet) {
 		@include flex-center;
 		/* outline: 1px solid tomato; */
@@ -23,6 +26,9 @@
 }
 
 .site-nav__item:not(:last-child) {
+	@include breakpoint(until-tablet) {
+		margin-bottom: 40px;
+	}
 	@include breakpoint(tablet) {
 		margin-right: 50px;
 	}
@@ -31,15 +37,17 @@
 .site-nav__link {
 	position: relative;
 
-	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	display: inline-block;
 
 	color: $title-text-color;
 
-	@extend %header-font;
-
 	transition: color $transition-time $transition-function;
+
+	@extend %header-font;
+	@include breakpoint(tablet) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
 
 	&:hover,
 	&:focus {
@@ -55,7 +63,11 @@
 
 		position: absolute;
 		left: 0;
-		bottom: 0;
+		bottom: -8px;
+
+		@include breakpoint(tablet) {
+			bottom: 0;
+		}
 
 		display: block;
 
@@ -64,62 +76,5 @@
 		border-radius: 2px;
 
 		background-color: $accent-color;
-	}
-}
-
-.icon-mobile-menu,
-.icon-mobile-close {
-	fill: currentColor;
-}
-
-.nav-bar__button {
-	// width: 40px;
-	// height: 40px;
-	display: inline-flex;
-	margin: 0;
-	padding: 0;
-	border: 0px;
-	background-color: transparent;
-
-	// @include flex-center;
-
-	&:hover,
-	&:focus {
-		color: $accent-color;
-	}
-}
-
-.nav-bar__button .icon-mobile-close {
-	display: none;
-}
-
-.nav-bar__button.is-open .icon-mobile-close {
-	display: block;
-}
-
-.nav-bar__button.is-open .icon-mobile-menu {
-	display: none;
-}
-
-.mobile-menu-container {
-	display: none;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-
-	background-color: darkcyan;
-	padding: 20px;
-	text-align: center;
-	font-size: 20px;
-
-	&.is-open {
-		display: block;
-	}
-}
-
-@include breakpoint(tablet) {
-	.nav-bar__button {
-		display: none;
 	}
 }

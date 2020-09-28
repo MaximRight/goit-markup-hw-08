@@ -1,8 +1,14 @@
 /* CONTACTS !!!!!!!!!*/
 
 .contacts-nav {
-	@include breakpoint(until-tablet) {
-		display: none;
+	// @include breakpoint(until-tablet) {
+	// 	display: none;
+	// }
+
+	@include breakpoint(tablet) {
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
 	}
 
 	@include breakpoint(desktop) {
@@ -11,7 +17,15 @@
 }
 
 .contacts-nav__item:not(:last-child) {
-	margin-right: 30px;
+	@include breakpoint(until-tablet) {
+		margin-bottom: 16px;
+	}
+	@include breakpoint(tablet) {
+		margin-bottom: 10px;
+	}
+	@include breakpoint(desktop) {
+		margin-right: $mr;
+	}
 }
 
 .contacts-nav__link {
@@ -31,6 +45,28 @@
 	}
 }
 
-.contacts-nav__icon {
+.contacts-nav__icon-envelope {
 	margin-right: 10px;
+
+	@include breakpoint(until-tablet) {
+		width: 16px;
+		height: 11px;
+	}
+	@include breakpoint(tablet-to-desktop) {
+		width: 14px;
+		height: 10px;
+	}
+}
+
+.contacts-nav__icon-phone {
+	margin-right: 10px;
+
+	@include breakpoint(until-tablet) {
+		width: 10px;
+		height: 15px;
+	}
+	@include breakpoint(tablet-to-desktop) {
+		width: 10px;
+		height: 14px;
+	}
 }

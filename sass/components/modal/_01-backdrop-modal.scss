@@ -8,8 +8,9 @@
 }
 
 .backdrop {
-	overflow: auto;
+	overflow-y: scroll;
 
+	// padding: 93px 15px;
 	position: fixed;
 	top: 0px;
 	left: 0px;

@@ -1,7 +1,9 @@
 /* FOOTER JOIN US */
 
 .container-footer.join-us {
-	margin-bottom: 60px;
+	@include breakpoint(until-desktop) {
+		margin-bottom: 60px;
+	}
 }
 
 // Для Десктопа

@@ -18,15 +18,14 @@
 		height: 80px;
 	}
 
-	@include breakpoint(desktop) {
-		@include flex-center;
-	}
+	// @include breakpoint(desktop) {
+	// 	@include flex-center;
+	// }
 }
 
 .container.nav {
 	@include breakpoint(until-tablet) {
-		display: flex;
-		align-items: center;
+		@include flex-center($content: space-between);
 
 		height: 60px;
 	}

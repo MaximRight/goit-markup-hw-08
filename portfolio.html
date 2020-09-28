@@ -23,15 +23,37 @@
 	<body class="body">
 		<!-- Шапка сайта -->
 		<header class="page-header">
-			<!-- Нав - это всегда про ссылки на секции этой или других страниц -->
 			<div class="container nav">
-				<nav class="navbar">
-					<!-- Логотип, всегда ссылка -->
-					<a href="./index.html" class="logo">
-						Web<span class="logo-header">Studio</span>
-					</a>
+				<a href="./index.html" class="logo">
+					Web<span class="logo-header">Studio</span>
+				</a>
 
-					<!-- Ссылки на другие страницы или разделы текущей -->
+				<button
+					type="button"
+					class="nav-bar__button"
+					data-menu-button
+					aria-expanded="false"
+					aria-controls="menu-box"
+				>
+					<svg
+						width="40"
+						height="40"
+						class="nav-bar__button-icon"
+						aria-label="Переключатель мобильного меню"
+					>
+						<use
+							class="icon-mobile-menu"
+							href="./images/sprite-new.svg#icon-mobile-menu"
+						></use>
+						<use
+							class="icon-mobile-close"
+							href="./images/sprite-new.svg#icon-mobile-close"
+						></use>
+					</svg>
+				</button>
+				<!-- <nav class="nav-bar"> -->
+
+				<div class="menu-box" id="menu-box" data-menu>
 					<ul class="site-nav">
 						<li class="site-nav__item">
 							<a href="./index.html" class="site-nav__link">Студия</a>
@@ -45,31 +67,36 @@
 							<a href="##" class="site-nav__link">Контакты</a>
 						</li>
 					</ul>
-				</nav>
 
-				<!-- CONTACTS NAV!!!! -->
-				<!-- Контактные Данные в шапке, это не нав, потому что не ссылки на секции -->
-				<!-- <div class="contacts-container"> -->
-				<ul class="contacts-nav">
-					<li class="contacts-nav__item">
-						<a href="mailto:info@devstudio.com" class="contacts-nav__link">
-							<svg class="contacts-nav__icon icon" width="16" height="12">
-								<use href="./images/sprite-new.svg#icon-envelope"></use>
-							</svg>
-							<span> info@devstudio.com </span></a
-						>
-					</li>
-					<li class="contacts-nav__item">
-						<a href="tel:+380961111111" class="contacts-nav__link">
-							<svg class="contacts-nav__icon icon" width="10" height="16">
-								<use href="./images/sprite-new.svg#icon-smartphone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
-				<!-- </div> -->
+					<ul class="contacts-nav">
+						<li class="contacts-nav__item">
+							<a href="mailto:info@devstudio.com" class="contacts-nav__link">
+								<svg
+									class="contacts-nav__icon-envelope icon"
+									width="16"
+									height="12"
+								>
+									<use href="./images/sprite-new.svg#icon-envelope"></use>
+								</svg>
+								<span> info@devstudio.com </span></a
+							>
+						</li>
+						<li class="contacts-nav__item">
+							<a href="tel:+380961111111" class="contacts-nav__link">
+								<svg
+									class="contacts-nav__icon-phone icon"
+									width="10"
+									height="16"
+								>
+									<use href="./images/sprite-new.svg#icon-smartphone"></use>
+								</svg>
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
+			<!-- </nav> -->
 		</header>
 
 		<main>
@@ -310,9 +337,11 @@
 			</section>
 		</main>
 
+		<!-- FOOTER!!! -->
+		<!-- Я добавил ариа ссылку, которая используется в иконках-ссылках, когда нет текста, но нужно описание. Текст после ариа ссылки не читается обычно никакой ассистивной программой -->
 		<footer class="footbar">
 			<!-- Контейнер обертка, в него обернуто все -->
-			<div class="wrapper">
+			<div class="footer container">
 				<!-- Контейнер для логотипа и адреса и контактов -->
 				<div class="container-footer address">
 					<a href="./index.html" class="logo" aria-label="main page link">
@@ -369,7 +398,7 @@
 							placeholder="E-mail"
 						/>
 
-						<button type="submit" class="footer__button-subscribe button"
+						<button type="submit" class="footer__button-subscribe"
 							><span class="button__text">Подписаться</span>
 							<svg width="24px" height="24px" class="icon-footer">
 								<use href="./images/sprite-new.svg#icon-subscribe"></use>
@@ -380,5 +409,11 @@
 			</div>
 			<p lang="eng" class="copyright">2020 | Developed by GoIT Students</p>
 		</footer>
+
+		<script src="./js/modal.js"></script>
+		<script src="./js/btn-disable.js"></script>
+		<!-- <script src="./js/modal-body.js"></script> -->
+		<!-- <script src="./js/auto-header.js"></script> -->
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>

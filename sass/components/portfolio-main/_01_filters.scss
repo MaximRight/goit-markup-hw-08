@@ -1,7 +1,12 @@
 /* FILTERS-LIST BUTTONS */
 
 .filters-list {
-	@extend %flex-center;
+	@include breakpoint(until-tablet) {
+		@include flex-center($content: unset, $items: stretch);
+	}
+	@include breakpoint(tablet) {
+		@include flex-center($items: stretch);
+	}
 }
 
 .filters__list {
@@ -11,6 +16,12 @@
 .item {
 	.filters-list &:not(:last-child) {
 		margin-right: 8px;
+	}
+
+	// margin-bottom: 15px;
+
+	.filters-list &:not(:nth-last-child(-n + 2)) {
+		margin-bottom: 15px;
 	}
 }
 

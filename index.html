@@ -23,18 +23,39 @@
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 
-	<body class="body">
-		<!-- Шапка сайта -->
+	<body class="body" data-overflow>
 		<header class="page-header">
-			<!-- Нав - это всегда про ссылки на секции этой или других страниц -->
 			<div class="container nav">
-				<nav class="nav-bar">
-					<!-- Логотип, всегда ссылка -->
-					<a href="./index.html" class="logo">
-						Web<span class="logo-header">Studio</span>
-					</a>
+				<a href="./index.html" class="logo">
+					Web<span class="logo-header">Studio</span>
+				</a>
 
-					<!-- Ссылки на другие страницы или разделы текущей -->
+				<button
+					type="button"
+					class="nav-bar__button"
+					data-menu-button
+					aria-expanded="false"
+					aria-controls="menu-box"
+				>
+					<svg
+						width="40"
+						height="40"
+						class="nav-bar__button-icon"
+						aria-label="Переключатель мобильного меню"
+					>
+						<use
+							class="icon-mobile-menu"
+							href="./images/sprite-new.svg#icon-mobile-menu"
+						></use>
+						<use
+							class="icon-mobile-close"
+							href="./images/sprite-new.svg#icon-mobile-close"
+						></use>
+					</svg>
+				</button>
+				<!-- <nav class="nav-bar"> -->
+
+				<div class="menu-box" id="menu-box" data-menu>
 					<ul class="site-nav">
 						<li class="site-nav__item">
 							<a href="./index.html" class="site-nav__link current">Студия</a>
@@ -46,61 +67,36 @@
 							<a href="##" class="site-nav__link">Контакты</a>
 						</li>
 					</ul>
-					<button
-						type="button"
-						class="nav-bar__button"
-						data-menu-button
-						aria-expanded="false"
-						aria-controls="mobile-menu-container"
-					>
-						<svg
-							width="40"
-							height="40"
-							class="nav-bar__button-icon"
-							aria-label="Переключатель мобильного меню"
-						>
-							<use
-								class="icon-mobile-menu"
-								href="./images/sprite-new.svg#icon-mobile-menu"
-							></use>
-							<use
-								class="icon-mobile-close"
-								href="./images/sprite-new.svg#icon-mobile-close"
-							></use>
-						</svg>
-					</button>
-					<div
-						class="mobile-menu-container"
-						id="mobile-menu-container"
-						data-menu
-					>
-						Content Menu
-					</div>
-				</nav>
 
-				<!-- CONTACTS NAV!!!! -->
-				<!-- Контактные Данные в шапке, это не нав, потому что не ссылки на секции -->
-				<!-- <div class="contacts-container"> -->
-				<ul class="contacts-nav">
-					<li class="contacts-nav__item">
-						<a href="mailto:info@devstudio.com" class="contacts-nav__link">
-							<svg class="contacts-nav__icon icon" width="16" height="12">
-								<use href="./images/sprite-new.svg#icon-envelope"></use>
-							</svg>
-							<span> info@devstudio.com </span></a
-						>
-					</li>
-					<li class="contacts-nav__item">
-						<a href="tel:+380961111111" class="contacts-nav__link">
-							<svg class="contacts-nav__icon icon" width="10" height="16">
-								<use href="./images/sprite-new.svg#icon-smartphone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
-				<!-- </div> -->
+					<ul class="contacts-nav">
+						<li class="contacts-nav__item">
+							<a href="mailto:info@devstudio.com" class="contacts-nav__link">
+								<svg
+									class="contacts-nav__icon-envelope icon"
+									width="16"
+									height="12"
+								>
+									<use href="./images/sprite-new.svg#icon-envelope"></use>
+								</svg>
+								<span> info@devstudio.com </span></a
+							>
+						</li>
+						<li class="contacts-nav__item">
+							<a href="tel:+380961111111" class="contacts-nav__link">
+								<svg
+									class="contacts-nav__icon-phone icon"
+									width="10"
+									height="16"
+								>
+									<use href="./images/sprite-new.svg#icon-smartphone"></use>
+								</svg>
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
+			<!-- </nav> -->
 		</header>
 
 		<!-- Уникальный контент сайта -->
@@ -558,50 +554,46 @@
 		<footer class="footbar">
 			<!-- Контейнер обертка, в него обернуто все -->
 			<div class="footer container">
-				<div class="tablet-footer-container">
-					<!-- Контейнер для логотипа и адреса и контактов -->
-					<div class="container-footer address">
-						<a href="./index.html" class="logo" aria-label="main page link">
-							Web<span class="logo-footer">Studio</span>
-						</a>
+				<!-- Контейнер для логотипа и адреса и контактов -->
+				<div class="container-footer address">
+					<a href="./index.html" class="logo" aria-label="main page link">
+						Web<span class="logo-footer">Studio</span>
+					</a>
 
-						<address class="address">
-							<p class="location"> г. Киев, пр-т Леси Украинки, 26 </p>
+					<address class="address">
+						<p class="location"> г. Киев, пр-т Леси Украинки, 26 </p>
 
-							<ul>
-								<li class="link-footer">
-									<a href="mailto:info@example.com" class="title"
-										>info@example.com</a
-									>
-								</li>
-
-								<li class="link-footer">
-									<a href="tel:+380991111111" class="title"
-										>+38 099 111 11 11</a
-									>
-								</li>
-							</ul>
-						</address>
-					</div>
-
-					<!-- FOOTER JOIN US  -->
-					<div class="container-footer join-us">
-						<b class="footer-title"> присоединяйтесь </b>
-						<ul class="list-footer">
-							<li class="item">
-								<a href="##" class="link"></a>
+						<ul>
+							<li class="link-footer">
+								<a href="mailto:info@example.com" class="title"
+									>info@example.com</a
+								>
 							</li>
-							<li class="item">
-								<a href="##" class="link"></a>
-							</li>
-							<li class="item">
-								<a href="##" class="link"></a>
-							</li>
-							<li class="item">
-								<a href="##" class="link"></a>
+
+							<li class="link-footer">
+								<a href="tel:+380991111111" class="title">+38 099 111 11 11</a>
 							</li>
 						</ul>
-					</div>
+					</address>
+				</div>
+
+				<!-- FOOTER JOIN US  -->
+				<div class="container-footer join-us">
+					<b class="footer-title"> присоединяйтесь </b>
+					<ul class="list-footer">
+						<li class="item">
+							<a href="##" class="link"></a>
+						</li>
+						<li class="item">
+							<a href="##" class="link"></a>
+						</li>
+						<li class="item">
+							<a href="##" class="link"></a>
+						</li>
+						<li class="item">
+							<a href="##" class="link"></a>
+						</li>
+					</ul>
 				</div>
 
 				<!-- FOOTER SUBSCRIBE!!! -->
@@ -632,6 +624,7 @@
 
 		<script src="./js/modal.js"></script>
 		<script src="./js/btn-disable.js"></script>
+		<!-- <script src="./js/modal-body.js"></script> -->
 		<!-- <script src="./js/auto-header.js"></script> -->
 		<script src="./js/mobile-menu.js"></script>
 	</body>

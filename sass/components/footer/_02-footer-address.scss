@@ -1,11 +1,13 @@
 // FOOTER ADDRESS
 
 .container-footer.address {
-	margin-bottom: 60px;
-
-	@include breakpoint(desktop) {
-		margin-right: 70px;
+	@include breakpoint(until-desktop) {
+		margin-bottom: 60px;
 	}
+
+	// @include breakpoint(desktop) {
+	// 	margin-right: 70px;
+	// }
 
 	// Для Десктопа
 	// width: 231px;

@@ -7,14 +7,14 @@
 	// 	margin-left: auto;
 	// }
 
-	@include breakpoint(desktop) {
-		@include no-flex-center();
-	}
+	// @include breakpoint(desktop) {
+	// 	@include no-flex-center();
+	// }
 
 	background-color: $footer-color;
 }
 
-.footer {
+.footer.container {
 	@include breakpoint(until-desktop) {
 		text-align: center;
 	}
@@ -24,17 +24,16 @@
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	/* outline: 2px solid tomato; */
 
-	@include breakpoint(desktop) {
-		@include flex-center($items: baseline, $content: space-between);
-	}
-}
+	// @include breakpoint(desktop) {
+	// 	@include flex-center($items: baseline, $content: space-between);
+	// }
 
-.tablet-footer-container {
-	@include breakpoint(tablet) {
+	@include breakpoint(tablet-to-desktop) {
+		width: 768px;
 		@include flex-center($items: baseline, $content: space-around);
 	}
 
 	@include breakpoint(desktop) {
-		margin-right: 93px;
+		@include flex-center($content: space-between, $items: baseline);
 	}
 }

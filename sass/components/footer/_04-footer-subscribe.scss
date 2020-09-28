@@ -3,7 +3,9 @@
 .container-subscribe {
 	margin-bottom: 20px;
 
-	@include no-flex-center;
+	// @include breakpoint(until-desktop) {
+	// 	@include no-flex-center;
+	// }
 
 	@include breakpoint(tablet-to-desktop) {
 		max-width: 450px;

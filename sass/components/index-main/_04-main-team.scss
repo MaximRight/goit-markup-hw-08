@@ -43,6 +43,14 @@
 
 	border-radius: 0px 0px 4px 4px;
 
+	@include breakpoint(until-tablet) {
+		@include no-flex-center;
+		max-width: 450px;
+		&:not(:nth-last-child(1)) {
+			margin-bottom: $mb;
+		}
+	}
+
 	@include breakpoint(tablet-to-desktop) {
 		width: calc((100% - 1 * 30px) / 2);
 
@@ -64,12 +72,6 @@
 			margin-right: $mr;
 		}
 		&:not(:nth-last-child(-n + 4)) {
-			margin-bottom: $mb;
-		}
-	}
-
-	@include breakpoint(until-tablet) {
-		&:not(:nth-last-child(1)) {
 			margin-bottom: $mb;
 		}
 	}
