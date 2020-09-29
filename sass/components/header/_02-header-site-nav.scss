@@ -43,7 +43,7 @@
 
 	transition: color $transition-time $transition-function;
 
-	@extend %header-font;
+	@include header-font;
 	@include breakpoint(tablet) {
 		padding-top: 32px;
 		padding-bottom: 32px;

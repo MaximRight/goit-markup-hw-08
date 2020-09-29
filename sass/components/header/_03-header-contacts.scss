@@ -34,7 +34,7 @@
 .contacts-nav__link {
 	color: $primary-text-color;
 
-	@extend %header-font;
+	@include header-font;
 
 	transition: color $transition-time $transition-function;
 
