@@ -20,6 +20,7 @@
 
 	background-color: rgba(0, 0, 0, 0.4);
 
+	z-index: 2;
 	opacity: 1;
 
 	transition: opacity 700ms $transition-function;
@@ -60,7 +61,7 @@
 
 	opacity: 1;
 
-	transform: translate(-50%, 0%) scale(1);
+	transform: translate(-50%, 10%) scale(1);
 
 	transition: transform $transition-time $transition-function $transition-time,
 		opacity $transition-time $transition-function $transition-time;

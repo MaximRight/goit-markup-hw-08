@@ -1,7 +1,7 @@
 /* CHECKBOX */
 
 .checkbox-label {
-	@extend %flex-center;
+	@include flex-center($wrap: nowrap);
 	margin-bottom: $mb;
 
 	@extend %footer-feature-checkbox-font;
