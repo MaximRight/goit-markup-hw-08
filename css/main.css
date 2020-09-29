@@ -493,12 +493,6 @@ h5 {
   z-index: 1;
 }
 
-@media (min-width: 768px) {
-  .menu-box {
-    border-bottom: 1px solid #ececec;
-  }
-}
-
 @media (max-width: 767px) {
   .menu-box {
     display: none;
@@ -610,8 +604,8 @@ h5 {
 
 @media (min-width: 768px) {
   .site-nav__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 29px;
+    padding-bottom: 29px;
   }
 }
 
@@ -637,7 +631,7 @@ h5 {
 
 @media (min-width: 768px) {
   .site-nav__link.current::after {
-    bottom: 0;
+    bottom: -3px;
   }
 }
 

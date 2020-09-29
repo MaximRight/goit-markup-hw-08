@@ -44,9 +44,9 @@
 	text-align: center;
 	z-index: 1;
 
-	@include breakpoint(tablet) {
-		border-bottom: 1px solid $header-stroke;
-	}
+	// @include breakpoint(tablet) {
+	// 	border-bottom: 1px solid $header-stroke;
+	// }
 
 	@include breakpoint(until-tablet) {
 		display: none;
