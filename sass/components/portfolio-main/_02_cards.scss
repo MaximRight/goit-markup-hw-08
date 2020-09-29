@@ -28,7 +28,7 @@
 	}
 
 	@include breakpoint(until-tablet) {
-		max-width: 370px;
+		// max-width: 370px;
 		margin-left: auto;
 		margin-right: auto;
 
@@ -39,7 +39,7 @@
 
 	@include breakpoint(tablet-to-desktop) {
 		width: calc((100% - 1 * 30px) / 2);
-		max-width: 368px;
+		// max-width: 368px;
 
 		&:not(:nth-child(2n)) {
 			margin-right: 30px;

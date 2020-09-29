@@ -92,7 +92,7 @@ h5 {
 	}
 
 	@include breakpoint(tablet-to-desktop) {
-		width: 768px;
+		// width: 768px;
 	}
 
 	@include breakpoint(desktop) {

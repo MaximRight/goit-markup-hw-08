@@ -26,7 +26,7 @@
 
 @include breakpoint(tablet) {
 	.team-members {
-		@include flex-center;
+		@include flex-center($items: stretch);
 	}
 }
 
@@ -44,8 +44,8 @@
 	border-radius: 0px 0px 4px 4px;
 
 	@include breakpoint(until-tablet) {
-		@include no-flex-center;
-		max-width: 450px;
+		// @include no-flex-center;
+		// max-width: 450px;
 		&:not(:nth-last-child(1)) {
 			margin-bottom: $mb;
 		}
@@ -82,6 +82,7 @@
 .team-members__image {
 	display: inline;
 	margin-bottom: $mb;
+	width: 100%;
 }
 
 .team-members__title {

@@ -33,6 +33,23 @@
 	@include breakpoint(tablet) {
 		@include flex-center;
 		height: 80px;
+		width: 768px;
 		// outline: 2px solid tomato;
+	}
+
+	@include breakpoint(desktop) {
+		width: 1200px;
+	}
+}
+
+.page-header .logo {
+	@include breakpoint(desktop) {
+		margin-right: 93px;
+	}
+}
+
+.page-header .site-nav {
+	@include breakpoint(desktop) {
+		margin-right: 305px;
 	}
 }

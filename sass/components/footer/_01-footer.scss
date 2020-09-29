@@ -34,6 +34,7 @@
 	}
 
 	@include breakpoint(desktop) {
+		width: 1200px;
 		@include flex-center($content: space-between, $items: baseline);
 	}
 }

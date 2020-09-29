@@ -72,8 +72,12 @@
 	// 	width: 100%;
 	// }
 
-	@include breakpoint(tablet) {
+	@include breakpoint(tablet-to-desktop) {
 		@include flex-center($content: space-between);
 		flex-grow: 1;
+	}
+	@include breakpoint(desktop) {
+		@include flex-center;
+		flex-grow: 0;
 	}
 }
