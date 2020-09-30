@@ -515,7 +515,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .menu-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -741,7 +741,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .contacts-nav__icon-envelope {
     width: 14px;
     height: 10px;
@@ -759,7 +759,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .contacts-nav__icon-phone {
     width: 10px;
     height: 14px;
@@ -806,6 +806,7 @@ h5 {
 
 @media (min-width: 1200px) {
   .hero {
+    background-size: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -893,7 +894,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .feature-list__item {
     width: calc((100% - 1 * 30px) / 2);
   }
@@ -1049,7 +1050,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .team-members__item {
     width: calc((100% - 1 * 30px) / 2);
   }
@@ -1166,7 +1167,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .clients-list__item {
     width: calc((100% - 2 * 30px) / 3);
   }
@@ -1225,7 +1226,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .footer.container {
     width: 768px;
     display: -webkit-box;
@@ -1360,7 +1361,7 @@ h5 {
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container-subscribe {
     max-width: 450px;
   }
@@ -1853,7 +1854,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .portfolio-list__item {
     width: calc((100% - 1 * 30px) / 2);
   }
@@ -1955,7 +1956,7 @@ h5 {
   letter-spacing: 0.06em;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .card-content__title {
     font-family: Roboto;
     font-style: normal;

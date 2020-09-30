@@ -60,6 +60,7 @@
 	}
 
 	@include breakpoint(desktop) {
+		background-size: 1600px;
 		@include no-flex-center();
 		padding-top: 200px;
 
