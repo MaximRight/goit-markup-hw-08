@@ -45,8 +45,8 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button:hover, .footer__button-subscribe:hover, .modal__button-submit:hover, .hero__button:focus, .footer__button-subscribe:focus, .modal__button-submit:focus {
@@ -370,8 +370,8 @@ h5 {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover, .button:focus {
@@ -593,8 +593,8 @@ h5 {
   position: relative;
   display: inline-block;
   color: #212121;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -699,8 +699,8 @@ h5 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (max-width: 767px) {
@@ -1112,8 +1112,8 @@ h5 {
   height: 44px;
   color: #afb1b8;
   border-radius: 50%;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1), background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1), background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
   /* background-color: yellow; */
 }
 
@@ -1188,8 +1188,8 @@ h5 {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__link:hover, .clients-list__link:focus {
@@ -1204,8 +1204,8 @@ h5 {
 }
 
 .clients-list__icon {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FOOTER */
@@ -1283,8 +1283,8 @@ h5 {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .title:hover, .address .title:focus {
@@ -1331,27 +1331,27 @@ h5 {
   /* background-color: tomato; */
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-footer__link:hover, .list-footer__link:focus {
   background-color: #2196f3;
 }
 
-.list-footer__item:nth-child(1) .link {
+.list-footer__item:nth-child(1) .list-footer__link {
   background-image: url(../images/footerlink1.svg);
 }
 
-.list-footer__item:nth-child(2) .link {
+.list-footer__item:nth-child(2) .list-footer__link {
   background-image: url(../images/footerlink2.svg);
 }
 
-.list-footer__item:nth-child(3) .link {
+.list-footer__item:nth-child(3) .list-footer__link {
   background-image: url(../images/footerlink3.svg);
 }
 
-.list-footer__item:nth-child(4) .link {
+.list-footer__item:nth-child(4) .list-footer__link {
   background-image: url(../images/footerlink4.svg);
 }
 
@@ -1455,8 +1455,8 @@ h5 {
 
 .backdrop.is-hidden .modal {
   left: 50%;
-  -webkit-transform: translate(-50%, -100%) scale(0.1);
-          transform: translate(-50%, -100%) scale(0.1);
+  -webkit-transform: translate(-50%, -40%) scale(0.1);
+          transform: translate(-50%, -40%) scale(0.1);
   opacity: 0;
 }
 
@@ -1469,10 +1469,10 @@ h5 {
   opacity: 1;
   -webkit-transform: translate(-50%, 10%) scale(1);
           transform: translate(-50%, 10%) scale(1);
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  -webkit-transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms, opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms, opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms, -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
 }
 
 @media (max-width: 479px) {
@@ -1705,10 +1705,10 @@ h5 {
   outline: 0px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:hover {
@@ -1791,8 +1791,8 @@ h5 {
   background-color: #f5f4fa;
   color: #212121;
   cursor: pointer;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1), background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1), background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:hover, .filter:focus {
@@ -1828,10 +1828,10 @@ h5 {
   /* background-color: tomato; */
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list__item:hover, .portfolio-list__item:focus {
@@ -1902,10 +1902,10 @@ h5 {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
@@ -1923,10 +1923,10 @@ h5 {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   opacity: 0;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list__thumb:hover .portfolio-list__text {
