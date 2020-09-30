@@ -15,7 +15,7 @@
 	@include flex-center();
 }
 
-.list-footer .item {
+.list-footer__item {
 	display: flex;
 
 	&:not(:last-child) {
@@ -23,7 +23,7 @@
 	}
 }
 
-.list-footer .link {
+.list-footer__link {
 	height: 44px;
 	width: 44px;
 	background-size: 20px;
@@ -45,7 +45,7 @@ $numbers: "1" "footerlink1", "2" "footerlink2", "3" "footerlink3",
 	"4" "footerlink4";
 
 @each $iconNumber, $iconName in $numbers {
-	.list-footer .item:nth-child(#{$iconNumber}) .link {
+	.list-footer__item:nth-child(#{$iconNumber}) .link {
 		background-image: url(../images/#{$iconName}.svg);
 	}
 }
