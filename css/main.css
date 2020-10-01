@@ -495,9 +495,14 @@ h5 {
 }
 
 .menu-box {
-  background-color: #ffffff;
   text-align: center;
   z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .menu-box {
+    background-color: #ffffff;
+  }
 }
 
 @media (max-width: 767px) {

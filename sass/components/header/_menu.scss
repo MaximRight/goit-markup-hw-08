@@ -40,9 +40,12 @@
 }
 
 .menu-box {
-	background-color: $white-color;
 	text-align: center;
 	z-index: 1;
+
+	@include breakpoint(until-tablet) {
+		background-color: #ffffff;
+	}
 
 	// @include breakpoint(tablet) {
 	// 	border-bottom: 1px solid $header-stroke;
