@@ -173,6 +173,7 @@ h5 {
 }
 
 .body {
+  padding-top: 60px;
   background-color: #ffffff;
   color: #757575;
   font-family: roboto, sans-serif;
