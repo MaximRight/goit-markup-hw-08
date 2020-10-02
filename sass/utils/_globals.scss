@@ -54,6 +54,9 @@ h5 {
 	&.modal-open {
 		overflow: hidden;
 	}
+	@include breakpoint(tablet) {
+		padding: 0;
+	}
 }
 
 // Паддинги для секции в этом макете

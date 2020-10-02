@@ -14,7 +14,7 @@
 	// тут можно обойтись одним значением градиента
 
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: center;
 	background-size: cover;
 	background-color: $footer-color;
 
@@ -63,6 +63,7 @@
 		background-size: 1600px;
 		@include no-flex-center();
 		padding-top: 200px;
+		padding-bottom: 200px;
 
 		background-image: linear-gradient(
 				to right,

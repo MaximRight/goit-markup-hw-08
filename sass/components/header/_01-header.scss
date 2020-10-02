@@ -16,10 +16,13 @@
 
 	@include breakpoint(until-tablet) {
 		position: fixed;
+		top: 0;
 		width: 100%;
+		z-index: 1;
 	}
 
 	@include breakpoint(tablet) {
+		position: relative;
 		height: 80px;
 	}
 

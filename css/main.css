@@ -183,6 +183,12 @@ h5 {
   overflow: hidden;
 }
 
+@media (min-width: 768px) {
+  .body {
+    padding: 0;
+  }
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -392,12 +398,15 @@ h5 {
 @media (max-width: 767px) {
   .page-header {
     position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 1;
   }
 }
 
 @media (min-width: 768px) {
   .page-header {
+    position: relative;
     height: 80px;
   }
 }
@@ -776,7 +785,7 @@ h5 {
   text-align: center;
   padding: 118px 60px;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-color: #2f303a;
 }
@@ -815,6 +824,7 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/003hero-desk.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/003hero-desk.jpg);
   }
@@ -1437,6 +1447,11 @@ h5 {
   margin: 0px;
   padding: 15px;
   /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+.test__link {
+  text-decoration: none;
+  color: #757575;
 }
 
 /* ---------МОДАЛКА ВСПЛЫВАЮЩАЯ!!!!------------ */
