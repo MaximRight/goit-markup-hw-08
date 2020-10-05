@@ -28,7 +28,9 @@
 	@include checkbox-hidden;
 }
 
-.icon-check {
+.icon-check::before {
+	display: block;
+	content: "";
 	margin-right: 4px;
 	width: 16px;
 	height: 15px;
@@ -37,7 +39,7 @@
 	border-radius: 2px;
 }
 
-.icon-check {
+.icon-check::before {
 	.checkbox-check:not(:checked):hover + & {
 		background-color: rgba(97, 100, 102, 0.356);
 	}
