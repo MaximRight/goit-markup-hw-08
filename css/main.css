@@ -1559,7 +1559,7 @@ h5 {
 }
 
 .modal-form__label:focus-within {
-  color: tomato;
+  color: #2196f3;
 }
 
 .modal-form__input {
@@ -1579,8 +1579,16 @@ h5 {
   border: 1px solid #2196f3;
 }
 
-.modal-form__input:not(:placeholder-shown) {
+.modal-form__input:not(:placeholder-shown):valid {
   border: 1px solid #2196f3;
+}
+
+.modal-form__input:not(:placeholder-shown):invalid {
+  border: 1px solid red;
+}
+
+.modal-form__input:focus:invalid {
+  border: 1px solid red;
 }
 
 .modal-form__icon {

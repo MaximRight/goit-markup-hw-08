@@ -558,6 +558,8 @@
 											name="name"
 											class="modal-form__input"
 											placeholder=" "
+											pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+											required
 										/>
 
 										<svg class="modal-form__icon" width="18" height="18">
@@ -577,6 +579,8 @@
 											name="tel"
 											class="modal-form__input"
 											placeholder=" "
+											pattern="[0-9]{10,12}"
+											required
 										/>
 										<svg class="modal-form__icon" width="18" height="18">
 											<use href="./images/sprite-new.svg#icon-modal-tel"></use>
@@ -593,6 +597,7 @@
 											name="mail"
 											class="modal-form__input"
 											placeholder=" "
+											required
 										/>
 										<svg class="modal-form__icon icon" width="18" height="18">
 											<use

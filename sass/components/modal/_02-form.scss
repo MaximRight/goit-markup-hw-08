@@ -49,7 +49,7 @@
 }
 
 .modal-form__label:focus-within {
-	color: tomato;
+	color: $accent-color;
 }
 
 .modal-form__input {
@@ -69,8 +69,15 @@
 		outline: transparent;
 		border: 1px solid $accent-color;
 	}
-	&:not(:placeholder-shown) {
+	&:not(:placeholder-shown):valid {
 		border: 1px solid $accent-color;
+	}
+	&:not(:placeholder-shown):invalid {
+		border: 1px solid red;
+	}
+
+	&:focus:invalid {
+		border: 1px solid red;
 	}
 }
 
