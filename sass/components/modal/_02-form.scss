@@ -48,6 +48,10 @@
 	position: relative;
 }
 
+.modal-form__label:focus-within {
+	color: tomato;
+}
+
 .modal-form__input {
 	height: 40px;
 	padding: 12px 40px;

@@ -124,6 +124,9 @@
 		transform: translateY(0);
 		opacity: 1;
 	}
+	@include breakpoint(mobile-only) {
+		font-size: 3.3vw;
+	}
 }
 
 .card-content {
