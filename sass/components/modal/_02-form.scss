@@ -32,11 +32,18 @@
 }
 
 // LABELS Data and Comment
-// .modal-form__label {
-// 	width: 448px;
+.modal-form__label {
+	position: relative;
 
-// 	/* outline: 1px solid blue; */
-// }
+	// width: 448px;
+	@include flex-center($content: normal, $items: normal);
+	flex-direction: column;
+	/* outline: 1px solid blue; */
+
+	&:focus-within {
+		color: $accent-color;
+	}
+}
 
 .text-label {
 	display: block;
@@ -48,11 +55,8 @@
 	position: relative;
 }
 
-.modal-form__label:focus-within {
-	color: $accent-color;
-}
-
 .modal-form__input {
+	position: relative;
 	height: 40px;
 	padding: 12px 40px;
 
@@ -83,10 +87,11 @@
 
 .modal-form__icon {
 	position: absolute;
-	top: 50%;
+	// top: 50%;
+	bottom: 0;
 	left: 12px;
 
-	transform: translateY(-50%);
+	transform: translateY(-59%);
 	fill: $title-text-color;
 
 	.modal-form__label:focus-within & {

@@ -1549,6 +1549,30 @@ h5 {
   margin-bottom: 10px;
 }
 
+.modal-form__label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* outline: 1px solid blue; */
+}
+
+.modal-form__label:focus-within {
+  color: #2196f3;
+}
+
 .text-label {
   display: block;
   margin-bottom: 4px;
@@ -1558,11 +1582,8 @@ h5 {
   position: relative;
 }
 
-.modal-form__label:focus-within {
-  color: #2196f3;
-}
-
 .modal-form__input {
+  position: relative;
   height: 40px;
   padding: 12px 40px;
   width: 100%;
@@ -1593,10 +1614,10 @@ h5 {
 
 .modal-form__icon {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 12px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-59%);
+          transform: translateY(-59%);
   fill: #212121;
 }
 
