@@ -184,6 +184,12 @@ h5 {
   overflow: hidden;
 }
 
+@media (min-width: 1200px) {
+  .body.modal-open {
+    padding-right: 25px;
+  }
+}
+
 @media (min-width: 768px) {
   .body {
     padding: 0;
@@ -1478,7 +1484,7 @@ h5 {
 }
 
 .backdrop.is-hidden .modal {
-  left: 50%;
+  left: 925px;
   -webkit-transform: translate(-50%, -40%) scale(0.1);
           transform: translate(-50%, -40%) scale(0.1);
   opacity: 0;
