@@ -7,10 +7,19 @@
 	pointer-events: none;
 }
 
+// ::-webkit-scrollbar {
+// 	width: 0px;  /* Remove scrollbar space */
+// 	background: transparent;  /* Optional: just make scrollbar invisible */}
+
 .backdrop {
 	overflow-y: scroll;
+	// -ms-overflow-style: none; /* Internet Explorer 10+ */
+	// scrollbar-width: none; /* Firefox */
 
-	// padding: 93px 15px;
+	// &::-webkit-scrollbar {
+	// 	display: none; /* Safari and Chrome */
+	// }
+
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -29,7 +38,8 @@
 // Модальное Окно
 
 .backdrop.is-hidden .modal {
-	left: 925px;
+	left: 50%;
+	margin-left: calc(98vw - 100%);
 
 	transform: translate(-50%, -40%) scale(0.1);
 
