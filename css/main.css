@@ -142,6 +142,12 @@
           user-select: none;
 }
 
+@media (min-width: 1200px) {
+  html {
+    margin-left: calc(100vw - 100%);
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -239,7 +245,7 @@ h5 {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1170px;
     /* outline: 2px solid tomato; */
   }
 }
@@ -787,6 +793,7 @@ h5 {
 .hero {
   text-align: center;
   padding: 118px 60px;
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1479,6 +1486,7 @@ h5 {
 
 .backdrop.is-hidden .modal {
   left: 50%;
+  margin-left: calc(98vw - 100%);
   -webkit-transform: translate(-50%, -40%) scale(0.1);
           transform: translate(-50%, -40%) scale(0.1);
   opacity: 0;

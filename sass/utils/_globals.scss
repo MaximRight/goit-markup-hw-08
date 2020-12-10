@@ -2,6 +2,12 @@
 	user-select: none;
 }
 
+html {
+	@include breakpoint(desktop) {
+		margin-left: calc(100vw - 100%);
+	}
+}
+
 // Стандарт для рисунков
 img {
 	display: block;
@@ -52,6 +58,11 @@ h5 {
 
 	&.modal-open {
 		overflow: hidden;
+
+		// @include breakpoint(desktop){
+		// 	padding-right: 25px;
+
+		// }
 	}
 
 	@include breakpoint(tablet) {
@@ -94,12 +105,12 @@ h5 {
 		width: 100%;
 	}
 
-	@include breakpoint(tablet-to-desktop) {
-		// width: 768px;
-	}
+	// @include breakpoint(tablet-to-desktop) {
+	// 	max-width: 768px;
+	// }
 
 	@include breakpoint(desktop) {
-		width: 1200px;
+		width: 1170px;
 
 		/* outline: 2px solid tomato; */
 	}
